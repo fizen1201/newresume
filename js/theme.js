@@ -7,8 +7,9 @@
 		$('.preloader').delay(603).fadeOut('slow'); // will fade out the white DIV that covers the website.
 		$('body').delay(603);
 	});
-
-
+var year = new Date().getFullYear();
+var latest = year - 2000; 
+$('#age').html(latest);
 	// Header Sticky
 	$(window).on('scroll', function () {
 		var stickytop = $('#header.sticky-top .bg-transparent');
