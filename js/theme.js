@@ -10,6 +10,12 @@
 var year = new Date().getFullYear();
 var latest = year - 2000; 
 $('#age').html(latest);
+if(year <2023){
+	$('#clg').html(year);
+}
+else{
+	$('.clgtime').html("Completed in 2022 (2018-2022)");
+}
 	// Header Sticky
 	$(window).on('scroll', function () {
 		var stickytop = $('#header.sticky-top .bg-transparent');
